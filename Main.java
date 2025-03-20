@@ -11,7 +11,6 @@ public class Main {
         Student2.wyswietlInfo();
         StudentGroup grupa = new StudentGroup("Grupa1");
         grupa.addStudent(Student1);
-        grupa.addStudent(Student2);
         System.out.println(Student2.getAvgGrade());
     }
 }
