@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Zadanie1 {
+public class Student {
     public String fName;
     public String lName;
     public String indexNum;
@@ -9,7 +9,7 @@ public class Zadanie1 {
     public String address;
     public List<Double> grades;
 
-    public Zadanie1(String fName, String lName, String indexNum, String email, String address) {
+    public Student(String fName, String lName, String indexNum, String email, String address) {
         this.fName = fName;
         this.lName = lName;
         this.indexNum = indexNum;
@@ -19,5 +19,16 @@ public class Zadanie1 {
     }
     public void addGrade(double grade) {
         grades.add(grade);
+    }
+    public void wyswietlInfo(){
+        System.out.println(fName + " " + lName + " " + indexNum + " " + email + " " + address);
+        System.out.println(grades);
+    }
+    public double getAvgGrade() {
+        double sum = 0;
+        for (double grade : grades) {
+            sum += grade;
+        }
+        return sum / grades.size();
     }
 }

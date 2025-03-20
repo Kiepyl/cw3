@@ -1,14 +1,14 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Zadanie1_2 {
+public class StudentGroup {
     public String nazwa;
-    public List<Zadanie1> students;
-    public Zadanie1_2(String nazwa) {
+    public List<Student> students;
+    public StudentGroup(String nazwa) {
         this.nazwa = nazwa;
         this.students = new ArrayList<>();
     }
-    public void addStudent(Zadanie1 student) {
+    public void addStudent(Student student) {
         students.add(student);
     }
 }
