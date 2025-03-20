@@ -8,6 +8,7 @@ public class StudentGroup {
         this.nazwa = nazwa;
         this.students = new ArrayList<>();
     }
+
     public void addStudent(Student student) {
         students.add(student);
     }

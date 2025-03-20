@@ -17,13 +17,16 @@ public class Student {
         this.address = address;
         this.grades = new ArrayList<>();
     }
+
     public void addGrade(double grade) {
         grades.add(grade);
     }
-    public void wyswietlInfo(){
+
+    public void wyswietlInfo() {
         System.out.println(fName + " " + lName + " " + indexNum + " " + email + " " + address);
         System.out.println(grades);
     }
+
     public double getAvgGrade() {
         double sum = 0;
         for (double grade : grades) {
