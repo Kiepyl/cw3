@@ -8,4 +8,7 @@ public class Zadanie1_2 {
         this.nazwa = nazwa;
         this.students = new ArrayList<>();
     }
+    public void addStudent(Zadanie1 student) {
+        students.add(student);
+    }
 }
