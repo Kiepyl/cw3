@@ -10,8 +10,10 @@ public class Main {
         Student2.addGrade(5);
         Student2.addGrade(5);
         Student2.studentInfo();
-        StudentGroup grupa = new StudentGroup("Grupa1");
-        grupa.addStudent(Student1);
+        StudentGroup group1 = new StudentGroup("Grupa1");
+        StudentGroup group2 = new StudentGroup("Grupa2");
+        group1.addStudent(Student1);
+        group2.addStudent(Student2);
         System.out.println(Student2.getAvgGrade());
         Student2.avgGradeRounded();
     }
