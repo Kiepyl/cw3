@@ -8,7 +8,7 @@ public class Main {
         Student2.addGrade(2);
         Student2.addGrade(4);
         Student2.addGrade(5);
-        Student2.addGrade(4);
+        Student2.addGrade(5);
         Student2.studentInfo();
         StudentGroup grupa = new StudentGroup("Grupa1");
         grupa.addStudent(Student1);

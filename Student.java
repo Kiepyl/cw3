@@ -32,6 +32,12 @@ public class Student {
         for (double grade : grades) {
             sum += grade;
         }
+        if (sum == 0) {
+            return 0;
+        }
+        if (grades.size() >= 20) {
+            return -1;
+        }
         return sum / grades.size();
     }
 
@@ -39,6 +45,9 @@ public class Student {
         double avgGrade = getAvgGrade();
         if (avgGrade == 0) {
             System.out.println("Brak ocen");
+        }
+        if (avgGrade == -1) {
+            System.out.println("Za duzo ocen");
         }
         if (avgGrade >= 2 && avgGrade < 2.25) {
             System.out.println(2);
