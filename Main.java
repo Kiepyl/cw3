@@ -7,10 +7,12 @@ public class Main {
         Student2.addGrade(3);
         Student2.addGrade(2);
         Student2.addGrade(4);
-        Student1.wyswietlInfo();
-        Student2.wyswietlInfo();
+        Student2.addGrade(5);
+        Student2.addGrade(4);
+        Student2.studentInfo();
         StudentGroup grupa = new StudentGroup("Grupa1");
         grupa.addStudent(Student1);
         System.out.println(Student2.getAvgGrade());
+        Student2.avgGradeRounded();
     }
 }

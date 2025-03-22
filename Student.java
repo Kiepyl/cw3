@@ -22,7 +22,7 @@ public class Student {
         grades.add(grade);
     }
 
-    public void wyswietlInfo() {
+    public void studentInfo() {
         System.out.println(fName + " " + lName + " " + indexNum + " " + email + " " + address);
         System.out.println(grades);
     }
@@ -33,5 +33,33 @@ public class Student {
             sum += grade;
         }
         return sum / grades.size();
+    }
+
+    public void avgGradeRounded() {
+        double avgGrade = getAvgGrade();
+        if (avgGrade == 0) {
+            System.out.println("Brak ocen");
+        }
+        if (avgGrade >= 2 && avgGrade < 2.25) {
+            System.out.println(2);
+        }
+        if (avgGrade >= 2.25 && avgGrade < 2.75) {
+            System.out.println(2.5);
+        }
+        if (avgGrade >= 2.75 && avgGrade < 3.25) {
+            System.out.println(3);
+        }
+        if (avgGrade >= 3.25 && avgGrade < 3.75) {
+            System.out.println(3.5);
+        }
+        if (avgGrade >= 3.75 && avgGrade < 4.25) {
+            System.out.println(4);
+        }
+        if (avgGrade >= 4.25 && avgGrade < 4.75) {
+            System.out.println(4.5);
+        }
+        if (avgGrade >= 4.75) {
+            System.out.println(5);
+        }
     }
 }
