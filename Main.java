@@ -14,9 +14,9 @@ public class Main {
         StudentGroup group2 = new StudentGroup("Grupa2");
         group1.addStudent(Student1);
         group2.addStudent(Student2);
+        group1.addStudent(Student1);
         System.out.println(Student2.getAvgGrade());
         Student2.avgGradeRounded();
-
-
+        group1.groupInfo();
     }
 }

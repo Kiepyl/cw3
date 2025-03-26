@@ -9,15 +9,19 @@ public class StudentGroup {
         this.students = new ArrayList<>();
     }
 
-    public int groupSize(){
-        int count=0;
-        for (Student student : students) {
-            count +=1;
+    public void addStudent(Student student) {
+        if (students.size()>=15) {
+            System.out.println("Too many students in this group");
         }
-        return count;
+        if (students.contains(student)) {
+            System.out.println("Student is already in this group");
+        }
+        students.add(student);
     }
 
-    public void addStudent(Student student) {
-        students.add(student);
+    public void groupInfo() {
+        for (Student student : students) {
+            System.out.println(student);
+        }
     }
 }
