@@ -9,6 +9,14 @@ public class StudentGroup {
         this.students = new ArrayList<>();
     }
 
+    public int groupSize(){
+        int count=0;
+        for (Student student : students) {
+            count +=1;
+        }
+        return count;
+    }
+
     public void addStudent(Student student) {
         students.add(student);
     }
