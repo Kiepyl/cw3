@@ -12,16 +12,16 @@ public class StudentGroup {
     public void addStudent(Student student) {
         if (students.size()>=15) {
             System.out.println("Too many students in this group");
+            return;
         }
         if (students.contains(student)) {
             System.out.println("Student is already in this group");
+            return;
         }
         students.add(student);
     }
 
     public void groupInfo() {
-        for (Student student : students) {
-            System.out.println(student);
-        }
+        System.out.println("Nazwa " + nazwa + "\nStudents " + students);
     }
 }
